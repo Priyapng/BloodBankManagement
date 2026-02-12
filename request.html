@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Blood - Smart Blood Bank</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <h2>🩸 <span>Smart</span>Blood</h2>
+  <nav>
+    <a href="index.html"class="btn">Home</a>
+    <a href="registration.html"class="btn">Donor Registration</a>
+    <a href="request.html"class="btn">Request Blood</a>
+    <a href="login.html" class="btn">Login</a>
+  </nav>
+</header>
+
+<!-- Request Section -->
+<section>
+<h2>Request Blood</h2>
+
+<form id="request-form" onsubmit="event.preventDefault(); alert('Request Submitted Successfully!');">
+>
+
+  <label>Patient Name</label>
+  <input type="text" placeholder="Enter Patient Name" required>
+
+  <label>Blood Group</label>
+  <select required>
+    <option value="">Select Blood Group</option>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>O+</option>
+    <option>O-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+  </select>
+
+  <label>Hospital Name</label>
+  <input type="text" placeholder="Enter Hospital Name" required>
+
+  <label>Required Units</label>
+<input type="number"
+       min="1"
+       step="1"
+       placeholder="Enter Units Required"
+       required>
+
+
+  <label>Required Date</label>
+  <input type="date" required>
+
+  <label>Contact Number</label>
+<input type="tel"
+       pattern="[0-9]{10}"
+       maxlength="10"
+       placeholder="Enter 10-digit Contact Number"
+       required>
+
+
+  <label>Emergency?</label>
+  <select>
+    <option>No</option>
+    <option>Yes</option>
+  </select>
+
+  <button type="submit">Submit Request</button>
+
+</form>
+</section>
+
+
+
+</body>
+</html>
